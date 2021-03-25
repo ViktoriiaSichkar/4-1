@@ -1,0 +1,360 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 2px;
+}
+
+h2, h3, p {
+  margin: 0;
+  padding: 0;
+  font-weight: 200;
+  color: white;
+}
+
+h2, h3 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p, a {
+  text-decoration: none;
+  color: #A0A0A0;
+}
+
+form {
+  width: 100%;
+}
+
+.wrap__gallary {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.fixed {
+  position: fixed;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+  background-color: #252222;
+  z-index: 2;
+}
+.fixed-text {
+  padding: 31px;
+}
+
+.fa__modal {
+  position: absolute;
+  display: block;
+  width: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+.fa__modal-open {
+  top: 50%;
+  right: 0;
+}
+.fa__modal-close {
+  top: 10px;
+  right: -10px;
+  font-size: 40px;
+  color: #A0A0A0;
+}
+.fa__modal-close:hover {
+  color: white;
+}
+
+#modal {
+  display: none;
+}
+
+#modal:checked ~ .modal {
+  display: block;
+}
+
+.modal {
+  display: none;
+  transition: 1s;
+  position: fixed;
+  bottom: 100px;
+  z-index: 1;
+}
+.modal__inner {
+  padding: 50px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #303030;
+}
+.modal__info {
+  width: 50%;
+  line-height: 1.5;
+}
+.modal__info p {
+  margin: 20px 0;
+  padding-right: 30px;
+  font-size: 25px;
+}
+
+.networks__icon ul {
+  display: flex;
+  padding: 0;
+  margin: 25px 0 0;
+}
+.networks__icon ul li {
+  list-style: none;
+  padding-right: 20px;
+}
+.networks__icon ul .icon {
+  font-size: 35px;
+  list-style: none;
+}
+.networks__icon ul .icon:hover {
+  color: #34a58e;
+}
+
+.modal__form {
+  width: 50%;
+}
+.modal__form .form {
+  width: 100%;
+}
+
+.form__input {
+  display: flex;
+  margin-top: 20px;
+}
+.form__input .input {
+  width: 100%;
+  margin-right: 20px;
+}
+.form__input .input:nth-child(2) {
+  margin: 0;
+}
+
+.form .input__name, .input__email, .мessage {
+  width: calc(100% - 28px);
+  padding: 10px;
+  outline: none;
+  background-color: #444444;
+  border: 4px solid #444444;
+  font-family: 'Dosis', sans-serif;
+  cursor: pointer;
+  color: #A0A0A0;
+  font-size: 18px;
+}
+.form .input__name:focus, .input__email:focus, .мessage:focus {
+  border: 4px solid #34a58e;
+}
+
+.form .мessage {
+  margin: 20px 0;
+}
+
+::-webkit-input-placeholder {
+  color: #A0A0A0;
+}
+
+.button {
+  outline: none;
+  padding: 10px;
+  font-family: 'Dosis', sans-serif;
+  color: white;
+  background-color: #303030;
+}
+.button:nth-child(1) {
+  margin-right: 20px;
+  background-color: #34a58e;
+  border: 4px solid #34a58e;
+}
+.button:hover {
+  background-color: #4fb19d;
+  border: 4px solid #4fb19d;
+  color: white;
+}
+.button:hover {
+  border: 4px solid #34a58e;
+}
+
+.modal__button {
+  width: 25%;
+  border: 4px solid #444444;
+  font-size: 20px;
+}
+
+.modal__bottom a:hover {
+  color: #34a58e;
+  text-decoration: none;
+}
+
+.wrap__gallary {
+  z-index: none;
+}
+
+.container {
+  position: relative;
+  width: 25%;
+  min-height: 400px;
+}
+.container h3 {
+  margin: 0;
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  font-size: 25px;
+}
+
+.image--nature_1 {
+  background-image: url("../src/images/thumbs/01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.image--nature_2 {
+  background-image: url("../src/images/thumbs/02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.image--nature_3 {
+  background-image: url("../src/images/thumbs/03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.image--nature_4 {
+  background-image: url("../src/images/thumbs/04.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.image--nature_5 {
+  background-image: url("../src/images/thumbs/05.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.image--nature_6 {
+  background-image: url("../src/images/thumbs/06.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.image--nature_7 {
+  background-image: url("../src/images/thumbs/07.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.image--nature_8 {
+  background-image: url("../src/images/thumbs/08.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.image--nature_9 {
+  background-image: url("../src/images/thumbs/08.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.image--nature_10 {
+  background-image: url("../src/images/thumbs/10.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.image--nature_11 {
+  background-image: url("../src/images/thumbs/11.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.image--nature_12 {
+  background-image: url("../src/images/thumbs/12.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    width: 50%;
+  }
+
+  .modal__inner {
+    padding: 50px 20px;
+  }
+
+  .modal__info p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 800px) {
+  .header-fixed {
+    top: 0;
+  }
+
+  .modal__inner {
+    height: 500px;
+    overflow-y: scroll;
+  }
+  .modal__info {
+    width: 100%;
+  }
+  .modal__form {
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .modal__form .form__input {
+    flex-wrap: wrap;
+  }
+
+  .form__input .input {
+    margin: 0;
+  }
+  .form__input .input:nth-child(1) {
+    margin-bottom: 20px;
+  }
+
+  .form .input__name, .input__email, .мessage {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .wrap__modal_button {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrap__modal_button .modal__button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

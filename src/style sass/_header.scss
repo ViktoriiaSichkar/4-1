@@ -1,0 +1,47 @@
+.fixed{
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    background-color: #252222;
+    z-index: 2;
+    &-text{
+        padding: 31px;
+    }
+}
+.fa__modal{
+    position: absolute;
+    display: block;
+    width: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white-text;
+    cursor: pointer;
+    &-open{    
+        top: 50%;
+        right: 0;
+    }
+    &-close{
+        top: 10px;
+        right: -10px;
+        font-size: 40px;
+        color: $grey-text;
+        &:hover{
+            color: $white-text
+        }
+    }
+
+}
+
+#modal{
+    display: none;
+}
+
+#modal:checked ~ .modal{
+   display: block;
+}
+
+
+
+
+

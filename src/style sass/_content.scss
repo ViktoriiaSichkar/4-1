@@ -1,0 +1,27 @@
+.wrap__gallary{
+    z-index: none;
+}
+.container{
+    position: relative;
+    width: 25%;
+    min-height: 400px;
+    h3{
+        margin: 0;
+        position: absolute;
+        bottom: 40px;
+        left: 30px;
+        font-size: 25px;
+    }     
+}
+
+.image{
+    @each $image, $value in $image{
+        &--#{$image} {
+        background-image: url($value);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        }
+    }
+}

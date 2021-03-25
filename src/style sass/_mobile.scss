@@ -1,0 +1,46 @@
+@media (max-width: 800px){
+    .header-fixed{
+        top: 0;
+    }
+    .modal{
+        &__inner{
+            height: 500px;
+            overflow-y: scroll;
+        }
+        &__info{
+            width: 100%;
+        }
+        &__form{
+            width: 100%;
+            padding-top: 30px;
+        }
+    }
+    .modal__form{
+        .form__input{
+            flex-wrap: wrap;
+        }
+        
+    }
+.form__input .input{
+    margin: 0;  
+    &:nth-child(1){
+        margin-bottom: 20px;
+    } 
+}
+.form .input__name, .input__email, .мessage{
+    width: 100%;
+}
+    .container{
+        width: 100%;
+    }
+
+.wrap__modal_button{
+    display: flex;
+    flex-direction: column;
+    .modal__button{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+}
