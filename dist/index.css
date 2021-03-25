@@ -84,7 +84,6 @@ form {
 
 .modal {
   display: none;
-  transition: 1s;
   position: fixed;
   bottom: 100px;
   z-index: 1;
@@ -194,10 +193,6 @@ form {
 .modal__bottom a:hover {
   color: #34a58e;
   text-decoration: none;
-}
-
-.wrap__gallary {
-  z-index: none;
 }
 
 .container {
@@ -312,10 +307,13 @@ form {
   }
 }
 @media (max-width: 800px) {
-  .header-fixed {
+  .fixed {
     top: 0;
   }
 
+  .modal {
+    top: 100px;
+  }
   .modal__inner {
     height: 500px;
     overflow-y: scroll;
